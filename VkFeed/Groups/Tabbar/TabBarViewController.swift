@@ -29,7 +29,6 @@ extension TabBarViewController{
         
         self.tabBarController?.restorationIdentifier = "TabBarViewController"
         let feedVC = UIStoryboard (name: "Feed", bundle: nil).instantiateInitialViewController() as! FeedViewController
-        feedVC.view.backgroundColor = .blue
         
         let firstBarItem = UITabBarItem()
         firstBarItem.image = UIImage(named: "feed")
@@ -37,7 +36,6 @@ extension TabBarViewController{
         feedVC.tabBarItem = firstBarItem
         
         let profileVC = UIStoryboard (name: "Profile", bundle: nil).instantiateInitialViewController() as! ProfileViewController
-        profileVC.view.backgroundColor = .blue
         
         let secondBarItem = UITabBarItem()
         secondBarItem.image = UIImage(named: "profile")
