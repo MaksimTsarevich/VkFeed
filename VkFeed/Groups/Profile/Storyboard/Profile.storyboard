@@ -14,13 +14,42 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D2v-M8-NY6">
+                                <rect key="frame" x="87" y="44" width="240" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="1UQ-FX-qYz"/>
+                                    <constraint firstAttribute="width" constant="240" id="t0F-yE-Drl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-7H-e6Y">
+                                <rect key="frame" x="87" y="414" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yDv-Gl-ezU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.57647058823529407" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HXM-7H-e6Y" firstAttribute="leading" secondItem="D2v-M8-NY6" secondAttribute="leading" id="557-yw-btN"/>
+                            <constraint firstItem="HXM-7H-e6Y" firstAttribute="trailing" secondItem="D2v-M8-NY6" secondAttribute="trailing" id="lrP-SL-7aU"/>
+                            <constraint firstItem="D2v-M8-NY6" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="qMw-D9-VG2"/>
+                            <constraint firstItem="HXM-7H-e6Y" firstAttribute="top" secondItem="D2v-M8-NY6" secondAttribute="bottom" constant="20" id="sca-JB-cxV"/>
+                            <constraint firstItem="D2v-M8-NY6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xNx-EW-ZZg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userImageView" destination="D2v-M8-NY6" id="quK-5E-9DY"/>
+                        <outlet property="userNameLabel" destination="HXM-7H-e6Y" id="x56-HY-hH6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="53"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="52.901785714285715"/>
         </scene>
     </scenes>
 </document>
