@@ -6,24 +6,22 @@
 //
 
 import UIKit
+import VK_ios_sdk
 
 class ProfileViewController: UIViewController {
-
+    
+    // - UI
+    @IBOutlet weak var userImageView: UIImageView!
+    
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    // - Data
+    
+    var user: ProfileModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        userNameLabel.text = user.firstname + " " + user.lastname
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
